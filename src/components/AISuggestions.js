@@ -13,7 +13,7 @@ export default function AISuggestions({ suggestions = [], setDraft }) {
             >
               <span className="text-sm flex-1 pr-2">{text}</span>
               <button
-                className="text-xs bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600"
+                className="text-xs bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition cursor-pointer" 
                 onClick={() => setDraft(text)}
               >
                 Copy

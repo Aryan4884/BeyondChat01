@@ -187,7 +187,7 @@ export default function Home() {
       <div className="w-full md:w-[56%] flex flex-col">
         <div className="px-6 py-3 font-semibold flex justify-between items-center" style={{ background: darkMode ? '#1f2937' : '#f0f4f8' }}>
           <span>{selected?.name}</span>
-          <button onClick={() => setDarkMode(!darkMode)} className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-500 dark:hover:bg-gray-600 transition" aria-label="Toggle Dark Mode">
+          <button onClick={() => setDarkMode(!darkMode)} className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-500 dark:hover:bg-gray-600 transition cursor-pointer" aria-label="Toggle Dark Mode">
             {darkMode ? <Sun size={18} className="text-white-400" /> : <Moon size={18} className="text-gray-100" />}
           </button>
         </div>
@@ -198,7 +198,7 @@ export default function Home() {
           <div className="relative">
           <button
             onClick={() => setAiAction(prev => (prev ? '' : 'open'))}
-            className="px-3 py-1 mb-2 rounded-full bg-blue-200 text-gray-800 hover:bg-blue-300"
+            className="px-3 py-1 mb-2 rounded-full bg-blue-200 text-gray-800 hover:bg-blue-300 transition cursor-pointer"
           >
             AI
           </button>
@@ -208,7 +208,7 @@ export default function Home() {
 
   <button
     onClick={() => { setAiAction(''); handleToneChange('neutral'); }}
-    className={`block w-full px-4 py-2 text-left transition 
+    className={`block w-full px-4 py-2 text-left transition cursor-pointer 
       ${darkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-100'}`}
   >
     Tone: Neutral
@@ -216,7 +216,7 @@ export default function Home() {
 
   <button
     onClick={() => { setAiAction(''); handleToneChange('friendly'); }}
-    className={`block w-full px-4 py-2 text-left transition 
+    className={`block w-full px-4 py-2 text-left transition cursor-pointer
       ${darkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-100'}`}
   >
     Tone: Friendly
@@ -224,7 +224,7 @@ export default function Home() {
 
   <button
     onClick={() => { setAiAction(''); handleToneChange('formal'); }}
-    className={`block w-full px-4 py-2 text-left transition 
+    className={`block w-full px-4 py-2 text-left transition cursor-pointer 
       ${darkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-100'}`}
   >
     Tone: Formal
@@ -232,7 +232,7 @@ export default function Home() {
 
   <button
     onClick={() => { setAiAction(''); handleToneChange('apologetic'); }}
-    className={`block w-full px-4 py-2 text-left transition 
+    className={`block w-full px-4 py-2 text-left transition cursor-pointer
       ${darkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-100'}`}
   >
     Tone: Apologetic
@@ -240,7 +240,7 @@ export default function Home() {
 
   <button
     onClick={() => { setAiAction(''); handleToneChange('confident'); }}
-    className={`block w-full px-4 py-2 text-left transition 
+    className={`block w-full px-4 py-2 text-left transition cursor-pointer 
       ${darkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-100'}`}
   >
     Tone: Confident
@@ -248,7 +248,7 @@ export default function Home() {
 
   <button
     onClick={() => { setAiAction(''); handleRephrase(); }}
-    className={`block w-full px-4 py-2 text-left transition 
+    className={`block w-full px-4 py-2 text-left transition cursor-pointer
       ${darkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-100'}`}
   >
     Rephrase
@@ -281,7 +281,7 @@ export default function Home() {
                   <div className="flex flex-col flex-grow">
                     <div>{msg.text}</div>
                     {isAI && (
-                      <button onClick={() => handleCopyAIResponse(msg.text)} className="text-xs mt-2 bg-blue-600 text-white px-2 py-1 rounded hover:bg-blue-700 w-max">
+                      <button onClick={() => handleCopyAIResponse(msg.text)} className="text-xs mt-2 bg-blue-600 text-white px-2 py-1 rounded hover:bg-blue-700 w-max transition cursor-pointer">
                         Add to composer
                       </button>
                     )}
@@ -306,10 +306,10 @@ export default function Home() {
         const lastUserMsg = [...selected.messages].reverse().find(m => m.sender === 'user')?.text;
         if (lastUserMsg) setDraftMessage(lastUserMsg);
       }}
-      className={`ml-2 text-xs px-3 py-1 rounded-lg transition ${
+      className={`ml-2 text-xs px-3 py-1 rounded-lg transition cursor-pointer ${
         darkMode
           ? 'bg-white text-black hover:bg-gray-200'
-          : 'bg-white text-black hover:bg-blue-600'
+          : 'bg-white text-black hover:bg-blue-200'
       }`}
     >
       {

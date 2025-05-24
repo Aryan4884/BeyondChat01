@@ -36,7 +36,7 @@ export default function MessageInput({ onSend, value = '', onChange, darkMode = 
       />
       <button
         type="submit"
-        className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition border-l 
+        className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition border-l cursor-pointer
           ${darkMode
             ? 'bg-gray-900 border-gray-700 text-gray-200 hover:bg-gray-800'
             : 'bg-white border-gray-300 text-gray-600 hover:bg-gray-100'}
