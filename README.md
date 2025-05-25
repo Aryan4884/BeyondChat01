@@ -21,7 +21,7 @@ To build a smart dashboard that:
 | 🤖 AI Suggestions | Live AI-generated responses (right side) |
 | ✂️ Copy-Paste | Agent can copy AI responses to the main reply box |
 | 🛠️ Editable Suggestions | Agent can tweak AI responses before sending |
-| 🔁 Regenerate Button | Fetch alternate AI suggestions |
+| 🔁 Regenerate Button | Fetch alternate AI suggestions(tone or rephrase) |
 
 ---
 
