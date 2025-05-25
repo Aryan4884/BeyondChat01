@@ -22,7 +22,6 @@ To build a smart dashboard that:
 | ✂️ Copy-Paste | Agent can copy AI responses to the main reply box |
 | 🛠️ Editable Suggestions | Agent can tweak AI responses before sending |
 | 🔁 Regenerate Button | Fetch alternate AI suggestions |
-| 🏷️ Tag / Assign | Tag users or assign conversations to team members (optional extension) |
 
 ---
 
