@@ -57,3 +57,5 @@ npm install
 ```bash
 npm run dev
 ```
+🧠 Credits
+Made by Aryan Raj 
